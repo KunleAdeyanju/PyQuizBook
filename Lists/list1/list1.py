@@ -113,13 +113,20 @@ def concat_list_indexwise(lst1, lst2):
     then the 1st index item, and so on till the last element. 
     Any leftover items will get added at the end of the new list.
     """
-    parseString # implement me
+    # c = [x + y for x, y in zip(a, b)]
+
+    ans = []
+    #parseString # implement me
+    for i, m in zip(lst1, lst2):
+        ans.append(i+m)
+    return ans
 
 def square_each_item(lst):
     """
     This function returns list which each item in argument list has been squared
     (read the test)
     """
+    return [x ** 2 for x in lst]
     pass # implement me
 
 def remove_empty_strs(lst):
