@@ -9,7 +9,8 @@ def merge_two_dicts(d1, d2):
     """
     Merge two Python dictionaries into one
     """
-    pass  # implement me
+    d1.update(d2)
+    return d1
 
 def init_dict_with_values(lst, d1):
     """
@@ -17,20 +18,21 @@ def init_dict_with_values(lst, d1):
 
     """
     #
-    pass  # implement me
+    return {i:d1 for i in lst}
 
 def extract_keys_to_dict(datadict, keylist):
     """
     Create a dictionary by extracting the keylist from a given dictionary
     """
     #
-    pass  # implement me
+    # a = {i:j for i, j in datadict, keylist if datadict.keys() in keylist }
+    return {i : datadict[i] for i in keylist if i in datadict }
 
 def delete_keys_from_dict(datadict, keylist):
     """
     Delete a list of keys from a dictionary
     """
-    pass
+    return {i : datadict[i] for i in datadict.keys() if i not in keylist }
 
 def check_dict_for_key(datadict, key):
     """
