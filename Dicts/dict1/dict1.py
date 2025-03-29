@@ -2,7 +2,8 @@ def create_dict_from_lists(keys, values):
     """
     This function returns a dict made from two lists.
     """
-    pass  # implement me
+    #pass  # implement me
+    return dict(zip(keys,values))
 
 def merge_two_dicts(d1, d2):
     """
