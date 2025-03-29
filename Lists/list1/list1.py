@@ -127,29 +127,36 @@ def square_each_item(lst):
     (read the test)
     """
     return [x ** 2 for x in lst]
-    pass # implement me
+    
 
 def remove_empty_strs(lst):
      """
      Remove empty strings from the list of strings
      """
-     pass
+    #  ans = []
+    #  for i in lst:
+    #      if i != "":
+    #          ans.append(i)
+    #  return ans
+     ans = [i for i in lst if i != ""]
+     return ans
+     
 
 
 def remove_item_from(lst, aaa):
     """
     Remove all occurrences of a specific item from a list.
     """
-    pass
+    return [i for i in lst if i != aaa]
 
 def leave_item_in(lst, aaa):
     """
     Leave all occurrences of a specific item in a list.
     """
-    pass
+    return [i for i in lst if i == aaa]
 
 def length_of(lst):
     """
     return the length of the list
     """
-    pass
+    return len(lst)
